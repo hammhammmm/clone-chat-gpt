@@ -1,0 +1,25 @@
+/* ================= FONTS ================== */
+$KrungthaiFast-Regular: 'KrungthaiFast-Regular';
+$KrungthaiFast-Bold: 'KrungthaiFast-Bold';
+$KrungthaiFast-Light: 'KrungthaiFast-Light';
+$KrungthaiFast-UltraLight: 'KrungthaiFast-UltraLight';
+
+@font-face {
+	font-family: $KrungthaiFast-Regular;
+	src: url(./assets/fonts/KrungthaiFast-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: $KrungthaiFast-Bold;
+	src: url(./assets/fonts/KrungthaiFast-Bold.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: $KrungthaiFast-Light;
+	src: url(./assets/fonts/KrungthaiFast-Light.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: $KrungthaiFast-UltraLight;
+	src: url(./assets/fonts/KrungthaiFast-UltraLight.ttf) format('truetype');
+}
