@@ -87,12 +87,14 @@ div[data-slot="input-wrapper"] {
   background-color: transparent !important;
   color: #fff !important;
   border: none;
-  font-size: 1.5rem !important;
+  font-size: 1rem !important;
   line-height: 1.5rem;
   white-space: pre-wrap;
   textarea{
     color: #fff !important;
     width: 95%;
+  font-size: 1rem !important;
+
 
   }
   textarea:focus {
@@ -100,5 +102,7 @@ div[data-slot="input-wrapper"] {
     -webkit-appearance: none; /* Disable WebKit focus outline */
     -moz-appearance: none; /* Disable Firefox focus outline */
     appearance: none; /* Disable appearance for other browsers */
+  font-size: 1rem !important;
+
   }
 }
