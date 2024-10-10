@@ -11,9 +11,11 @@
 *::-webkit-scrollbar {
   width: 12px; /* Width of the scrollbar */
 }
+
 *::-webkit-scrollbar-thumb {
   background-color: #424242; /* Thumb color */
 }
+
 *::-webkit-scrollbar-track {
   background-color: #212121; /* Track color */
 }
@@ -29,7 +31,7 @@ body {
   font-family: "KrungthaiFast-Bold" !important;
 }
 
-.bg {
+.bg{
   background-color: #212121;
 }
 
@@ -42,6 +44,7 @@ section {
     display: flex;
   }
 }
+
 
 .container {
   width: 100%;
@@ -56,6 +59,7 @@ section {
   width: 100%;
   color: #fff;
 }
+
 
 .message-input {
   width: 80%;
@@ -86,9 +90,10 @@ div[data-slot="input-wrapper"] {
   font-size: 1.5rem !important;
   line-height: 1.5rem;
   white-space: pre-wrap;
-  textarea {
+  textarea{
     color: #fff !important;
     width: 95%;
+
   }
   textarea:focus {
     outline: none; /* Standard rule */

@@ -1,7 +1,7 @@
 "use client"; // Client-side component
 
 import { Button, Textarea } from "@nextui-org/react";
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import React, { useState, useRef, useEffect } from "react";
 import { ArrowUp, GPTIcon } from "./components/Icons";
 
@@ -88,7 +88,6 @@ export default function Home() {
         }
       }
     }
-
   };
 
   // Handle form submission
@@ -196,12 +195,14 @@ export default function Home() {
                           <div className="flex min-w-0 flex-1 flex-col">
                             <div className="overflow-hidden default-browser">
                               <Textarea
+                                autoFocus
                                 onKeyDown={(e) => {
                                   if (e.key == "Enter" && !e.shiftKey) {
                                     e.preventDefault();
                                     handleSubmit(e);
                                   }
                                 }}
+                                id={"inputRef"}
                                 ref={inputRef}
                                 type="text"
                                 value={message}
@@ -209,7 +210,11 @@ export default function Home() {
                                 maxRows={3}
                                 onChange={(e) => setMessage(e.target.value)}
                                 placeholder="Message to ChatGPT"
-                                className="flex-1 p-2 rounded-[26px]  bg-[#2F2F2F] !text-white"
+                                className="flex-1 p-2 rounded-[26px]  bg-[#2F2F2F] !text-white "
+                                classNames={{
+                                  inputWrapper:
+                                    "group-data-[focus-visible=true]:ring-0 group-data-[focus-visible=true]:ring-offset-0",
+                                }}
                                 disabled={sendMessage.isPending} // Disable input while loading
                               />
                               <Button
