@@ -223,6 +223,7 @@ export default function Home() {
                                 isIconOnly
                                 color="default"
                                 className="absolute bottom-3.5 right-4 rounded-full"
+                                isDisabled={message === ""}
                               >
                                 <ArrowUp />
                               </Button>
